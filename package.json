@@ -7,7 +7,7 @@
     "test": "eslint src/**.js",
     "build": "yarn clean; NODE_ENV=production webpack --colors",
     "clean": "rimraf dist",
-    "deploy": "yarn build; surge -p dist -d schneider-cs52-starter.surge.sh; yarn clean"
+    "deploy": "yarn build; surge -p dist -d schneider-cs52-starter-nav.surge.sh; yarn clean"
   },
   "repository": "https://github.com/dartmouth-cs52-20X/starterpack-nathan-m-schneider-22.git",
   "author": "nathan-m-schneider-22 <nathan.m.schneider.22@dartmouth.edu>",
@@ -46,6 +46,7 @@
     "lodash.debounce": "^4.0.8",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-router": "^5.2.0"
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
   }
 }
