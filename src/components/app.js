@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import Counter from './counter';
 import Controls from './controls';
+import Bio from './bio';
 
 const Test = (props) => {
   return <div> ID: {props.match.params.id} </div>;
@@ -28,9 +29,7 @@ const Nav = (props) => {
 const About = (props) => {
   return <div> All there is to know about me </div>;
 };
-const Welcome = (props) => {
-  return <div>Welcome</div>;
-};
+
 const FallBack = (props) => {
   return <div>URL Not Found</div>;
 };
@@ -43,7 +42,7 @@ const App = (props) => {
         <Counter />
         <Controls />
         <Switch>
-          <Route exact path="/" component={Welcome} />
+          <Route exact path="/" component={Bio} />
           <Route path="/about" component={About} />
           <Route exact path="/test/:id" component={Test} />
           <Route component={FallBack} />
