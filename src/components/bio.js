@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/bio.scss';
 
 class Bio extends React.Component {
   constructor(props) {
@@ -9,7 +10,23 @@ class Bio extends React.Component {
   }
 
   componentDidMount() {
-    fetch('https://checkip.amazonaws.com/').then((res) => res.text()).then((data) => console.log(data));
+    // this.reportIP();
+  }
+
+  reportIP = () => {
+    fetch('https://icanhazip.com/').then((res) => res.text()).then((data) => {
+      console.log(data);
+      const live = 'https://ip-reporter.herokuapp.com/report';
+      //   const local = 'http://localhost:9090/report';
+      fetch(live, {
+        method: 'POST',
+        mode: 'cors',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ ip: data }),
+      });
+    });
   }
 
   render() {
