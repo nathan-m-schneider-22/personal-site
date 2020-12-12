@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/projects.scss';
+import Squirrel from '../media/squirrel.jpg';
 
 class Bio extends React.Component {
   constructor(props) {
@@ -13,7 +14,40 @@ class Bio extends React.Component {
     return (
       <div className="projects-container">
         <h1>Projects</h1>
-        <p>I have worked on many projects</p>
+
+        <div className="projects-list">
+          <div className="project">
+            <div>
+              <h2> Squirrel Camera</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <img src={Squirrel} className="project-pic" alt="squirrel in crosshairs" />
+          </div>
+          <div className="project">
+            <div>
+              <h2> Squirrel Camera</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <img src={Squirrel} className="project-pic" alt="squirrel in crosshairs" />
+          </div>
+          <div className="project">
+            <div>
+              <h2> Squirrel Camera</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <img src={Squirrel} className="project-pic" alt="squirrel in crosshairs" />
+          </div>
+
+        </div>
       </div>
     );
   }
