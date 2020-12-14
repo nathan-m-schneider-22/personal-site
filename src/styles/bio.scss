@@ -1,8 +1,72 @@
 .bio-container{
-    border-style: dashed;
-    border-color: black;
+    display: flex;
+    justify-content: space-around;
 }
 
 .profile-pic{
-    height: 400px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 10px;
+}
+
+.pic-container{
+    width: 40%;
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    a{
+        color:black;
+        text-decoration: none;
+        :hover{
+            color: grey;
+        }
+    }
+}
+
+.blurb-container{
+
+    padding:20px;
+    padding-top:80px;
+    width: 40%;
+
+    font-size: 24pt;
+    color: black;
+}
+
+.experience-container{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    h1 {
+        text-align: center;
+    }
+    
+}
+
+.experience{
+    width: 60%;
+    transition: transform 0.6s, opacity 0.6s;
+    padding:20px;
+    font-size: 16pt;
+    transform: translateY(50px);
+    opacity: 0;
+  
+    &.visible {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  
+}
+.logos{
+    font-size: 20pt;
+    letter-spacing:30px;
 }

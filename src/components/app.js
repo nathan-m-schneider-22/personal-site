@@ -9,17 +9,23 @@ import Projects from './projects';
 
 const Nav = () => {
   return (
-    <nav className="navbar">
-      <ul>
-        <li><NavLink to="/">About</NavLink></li>
-        <li><NavLink to="/projects">Projects</NavLink></li>
-        <li><a href="/src/media/Nathan_Schneider_Resume.pdf" target="_blank">Resume </a> </li>
-
-      </ul>
-    </nav>
+    <div className="navbar">
+      <li><NavLink to="/">About</NavLink></li>
+      <li><NavLink to="/projects">Projects</NavLink></li>
+    </div>
   );
 };
 
+const Privacy = () => {
+  return (
+    <div className="privacy">
+      <p>
+        By visiting this site you agree to have your attendence logged and reported to me.
+        For more information see <a href="https://github.com/nathan-m-schneider-22/personal-site">the repository</a>
+      </p>
+    </div>
+  );
+};
 const FallBack = () => {
   return <div>URL Not Found</div>;
 };
@@ -34,6 +40,7 @@ const App = (props) => {
           <Route exact path="/projects" component={Projects} />
           <Route component={FallBack} />
         </Switch>
+        <Privacy />
       </div>
     </Router>
   );

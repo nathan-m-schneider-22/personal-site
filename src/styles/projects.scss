@@ -1,14 +1,41 @@
 .projects-container{
-    border-style: dashed;
-    border-color: black;
-}
-
-.project-pic{
-    height: 100px;
-}
-
-.project{
-    border-style: dashed;
-    border-color: black;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14pt;
+
+}
+
+.projects-list{
+    width: 80%;
+}
+.project-pic{
+    height: 350px;
+}
+.project-blurb{
+    margin: 20px;
+    max-width: 50%;
+}
+.project{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rec.rec-arrow {
+    background-color: rgba(0, 0, 0, 0.315) !important; 
+    border-radius: 0;
+}
+
+
+.rec.rec-arrow:disabled {
+    visibility: hidden;
+}
+
+
+.rec.rec-dot {
+    background-color: white; 
 }
