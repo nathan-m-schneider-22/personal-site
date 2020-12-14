@@ -46,7 +46,7 @@ class Bio extends React.Component {
             <div>
               <h1>Nathan Schneider</h1>
               <Typist avgTypingDelay={30} stdTypingDelay={5} cursor={{ show: false }}>
-                <h3>Software Developer</h3>
+                <h3>Software Engineer</h3>
                 <h3><a href="mailto:schnei.nathan@gmail.com">schnei.nathan@gmail.com</a></h3>
               </Typist>
               <div className="logos">
