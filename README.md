@@ -15,3 +15,8 @@ As I apply to various companies, I'm interested in who is actually viewing this 
 By using the website you are agreeing to the recording of your IP address, as noted on the footer of the website. If you have any concerns, don't hesitate to contact me at schnei.nathan@gmail.com. 
 
 
+## Acknowledgments
+
+Starterpack code from Dartmouth COSC 052 with Tim Tregubov.
+
+Inspired in part by [Jai Smith's Website](https://jaismith.dev)
