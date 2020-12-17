@@ -63,7 +63,7 @@ class Bio extends React.Component {
           <div className="blurb-container">
             <Typist avgTypingDelay={20} startDelay={2000} stdTypingDelay={5} cursor={{ show: false }}>
               <p>
-                Hi, I&apos;m Nathan, a Dartmouth junior studying computer science.
+                Hi, I&apos;m Nathan, a computer science major at Dartmouth College, graduating in 2022.
               </p>
 
               <Typist.Delay ms={1000} />

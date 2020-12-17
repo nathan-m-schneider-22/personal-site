@@ -10,7 +10,7 @@ import Projects from './projects';
 const Nav = () => {
   return (
     <div className="navbar">
-      <li><NavLink to="/">About</NavLink></li>
+      <li><NavLink exact to="/">About</NavLink></li>
       <li><NavLink to="/projects">Projects</NavLink></li>
     </div>
   );

@@ -31,20 +31,24 @@ body, html {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
-  padding: 10px;
-  height: 20px;
-  font-size: 14pt;
-  border-style: dashed;
-  border-color: black;
+  padding: 12px;
+  height: 30px;
+  font-size: 16pt;
+  // border-style: dashed;
+  // border-color: rgb(163, 149, 149);
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   z-index: 10000;
   a{
     color: white;
+    padding: 3px 10px 3px 10px;
     text-decoration: none;
-
+    &.active {
+      color:black;
+      background: white;
   }
+}
   a:hover{
     color:grey;
   }
