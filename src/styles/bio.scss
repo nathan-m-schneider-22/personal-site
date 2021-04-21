@@ -70,3 +70,25 @@
     font-size: 20pt;
     letter-spacing:30px;
 }
+.question-button-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 25px;
+}
+.question-button{
+    width: 40%;
+    background-color: black;
+    border-radius: 0;
+    color: white;
+    font-family: "Jetbrains Mono", sans-serif;
+    border-style: hidden;
+    font-size: 32pt;
+    transition: all .2s ease-in-out;
+}
+
+.question-button:hover{
+    background-color: rgb(36, 36, 36);
+    border-radius: 20px;
+}

@@ -1,6 +1,6 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const autoprefixer = require('autoprefixer');
+// const autoprefixer = require('autoprefixer');
 
 const env = process.env.NODE_ENV || 'development';
 // set to 'production' or 'development' in your env
@@ -38,10 +38,6 @@ module.exports = {
           },
           {
             loader: 'postcss-loader',
-            options: {
-              plugins: () => [autoprefixer()],
-              sourceMap: true,
-            },
           },
           {
             loader: 'sass-loader',
@@ -52,7 +48,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/,
+        test: /\.(jpe?g|png|gif|svg|pdf)$/,
         use: [
           {
             loader: 'file-loader',

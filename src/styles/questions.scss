@@ -1,0 +1,39 @@
+.facts-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:40px;
+
+}
+.questions-container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.questions-blurb{
+
+    width:80%;
+}
+.prompt-container{
+    margin:10px;
+
+    width: 60%;
+}
+.prompt{
+    font-size: 20pt;
+    font-family:  "Jetbrains Mono", sans-serif;
+    width: 70%;
+}
+.ask-button{
+    font-size: 24pt;
+    font-family: "Jetbrains Mono", sans-serif;
+    color:white;
+    background-color: black;
+    border-style: hidden;
+}
+.response-container{
+
+    width: 80%;
+}

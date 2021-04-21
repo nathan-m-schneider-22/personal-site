@@ -6,12 +6,16 @@ import {
 } from 'react-router-dom';
 import Bio from './bio';
 import Projects from './projects';
+import Questions from './questions';
+import Facts from './facts';
 
 const Nav = () => {
   return (
     <div className="navbar">
       <li><NavLink exact to="/">About</NavLink></li>
       <li><NavLink to="/projects">Projects</NavLink></li>
+      <li><NavLink to="/questions">Q/A</NavLink></li>
+
     </div>
   );
 };
@@ -38,6 +42,8 @@ const App = (props) => {
         <Switch>
           <Route exact path="/" component={Bio} />
           <Route exact path="/projects" component={Projects} />
+          <Route exact path="/questions" component={Questions} />
+          <Route exact path="/facts" component={Facts} />
           <Route component={FallBack} />
         </Switch>
         <Privacy />

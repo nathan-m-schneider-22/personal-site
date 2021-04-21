@@ -1,8 +1,12 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react';
 import '../styles/bio.scss';
 import Typist from 'react-typist';
+import { Link } from 'react-router-dom';
 import ProfilePic from '../media/profile_pic.jpg';
 import Experience from './experience';
+// eslint-disable-next-line no-unused-vars
+import pdf from '../media/Full_Resume.pdf';
 
 class Bio extends React.Component {
   constructor(props) {
@@ -75,6 +79,15 @@ class Bio extends React.Component {
           </div>
         </div>
         <hr />
+        <div className="question-button-section">
+          <div>
+            <Link to="/questions/">
+              <button type="button" className="question-button">Ask me a question</button>
+            </Link>
+
+          </div>
+          <h2>Q/A powered by <a label="GPT-3" href="https://openai.com/blog/gpt-3-apps/">Openai&apos;s GPT-3 </a> </h2>
+        </div>
         <Experience />
       </div>
     );
