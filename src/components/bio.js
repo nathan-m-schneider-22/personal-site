@@ -25,7 +25,7 @@ class Bio extends React.Component {
   reportIP = () => {
     fetch('https://icanhazip.com/').then((res) => res.text()).then((data) => {
       console.log(data);
-      const live = 'https://ip-reporter.herokuapp.com/report';
+      const live = 'https://nschneider-backend.herokuapp.com/report';
       //   const local = 'http://localhost:9090/report';
       fetch(live, {
         method: 'POST',

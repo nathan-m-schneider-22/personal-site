@@ -26,7 +26,7 @@ class Projects extends React.Component {
   sendQuery = (query) => {
     if (!this.state.loading) {
       this.setState({ loading: true, query: '' });
-      const url = 'http://localhost:9090/question';
+      const url = 'https://nschneider-backend.herokuapp.com/question';
       const header = { 'Content-Type': 'application/json' };
       const data = { query };
       axios.post(url, data, header).then((res) => {
