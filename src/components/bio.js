@@ -57,7 +57,7 @@ class Bio extends React.Component {
                 <a href="http://linkedin.com/in/nathan-schneider22/" target="_blank" rel="noreferrer">
                   <i className="fa fa-linkedin-square" />
                 </a>
-                <a target="_blank" href="/src/media/Full_Resume.pdf">
+                <a target="_blank" href="/Full_Resume.pdf">
                   <i className="fa fa-file" />
                 </a>
               </div>

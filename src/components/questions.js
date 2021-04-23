@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/questions.scss';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import TextLoop from 'react-text-loop';
 
 class Projects extends React.Component {
   constructor(props) {
@@ -11,6 +12,10 @@ class Projects extends React.Component {
       loading: false,
       response: '',
     };
+  }
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
   }
 
   updateQuery = (e) => {
@@ -40,6 +45,25 @@ class Projects extends React.Component {
     }
   }
 
+  exampleQuestions = () => {
+    return (
+      <h2>
+        Ask me: &quot;
+        <TextLoop>
+          <span>Where are you from?</span>
+          <span>When is your birthday?</span>
+          <span>What programming languages do you know?</span>
+          <span>What&apos;s your favorite food?</span>
+          <span>Where do you go to school?</span>
+          <span>What do you do in your free time?</span>
+          <span>What are you passionate about?</span>
+
+        </TextLoop>
+        &quot;
+      </h2>
+    );
+  }
+
   render() {
     return (
       <div className="questions-container">
@@ -49,14 +73,19 @@ class Projects extends React.Component {
             I&apos;ve fed the model a set of facts about my life, work and hobbies.
             You can ask me questions in pretty much any format, and the model will isloate the purpose of your question,
             find the relevant facts about me, and compile a grammatically correct response. <br />
-            NOTE: For questions that the model cannot deduce from the information I have provided, it will refer to
-            its training data, which can include sensitive or offensive reponses, depending on the question.
+            NOTE: For questions that the model cannot deduce from the information I have provided,
+            it will try to deduce from its training data, which can include incorrect or
+            offensive reponses, depending on the question.
             Please use responsibly. To view exactly what information I provided, see&nbsp;
             <Link to="/facts/">
               here
             </Link>
           </h3>
         </div>
+        <div className="example-questions">
+          {this.exampleQuestions()}
+        </div>
+
         <div className="prompt-container">
           <input className="prompt"
             type="text"
@@ -71,9 +100,11 @@ class Projects extends React.Component {
             {this.state.loading ? 'Loading' : 'Ask'}
           </button>
         </div>
-        <div className="response-container">
-          <h2>{this.state.response}</h2>
-        </div>
+        {this.state.loading ? (<div />) : (
+          <div className="response-container">
+            <h2>{this.state.response}</h2>
+          </div>
+        )}
       </div>
     );
   }

@@ -63,7 +63,7 @@ class Facts extends React.Component {
             <li>Another personal project was difficulty classification of climbing routes.
               I retrieved and cleaned community climbing route data from Moonboard, then trained and tested deep neural networks to predict climbing route difficulty.
             </li>
-            <li>This summer, I will work as a software engineering intern at Amazon, in Seatlle. </li>
+            <li>This summer, I will work as a software engineering intern at Amazon, in Seattle. </li>
             <li>You can email me at schnei.nathan@gmail.com.</li>
             <li>You can ask me about my work, my hobbies, or general questions about my life.</li>
           </ul>
