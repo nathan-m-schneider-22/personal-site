@@ -3,7 +3,7 @@ import React from 'react';
 import '../styles/bio.scss';
 import Typist from 'react-typist';
 import { Link } from 'react-router-dom';
-import ProfilePic from '../media/profile_pic.jpg';
+import ProfilePic from '../media/profile_pic.png';
 import Experience from './experience';
 // eslint-disable-next-line no-unused-vars
 import pdf from '../media/Full_Resume.pdf';

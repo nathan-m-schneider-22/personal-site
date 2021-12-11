@@ -7,6 +7,34 @@ const Experience = () => {
       <h1>Work Experience</h1>
       <OnVisible className="experience" percent={20}>
         <h2>
+          Software Development Engineer Intern
+        </h2>
+        <h3>
+          June 2021 - September 2020
+        </h3>
+        <h3>
+          <i>
+            Amazon Web Services, Seattle, WA
+          </i>
+        </h3>
+        <ul>
+          <li>
+            Designed and implemented a cloud infrastructure tool for collaboration and automation in software testing
+          </li>
+          <li>
+            Through investigation and research, diagnosed and defined team productivity losses
+          </li>
+          <li>
+            Using AWS CDK Infrastructure as Code, provisioned and tuned cloud services for reliability and security
+          </li>
+          <li>
+            Wrote high quality Python, Go, and Typescript code, chosen for varying needs of the project
+          </li>
+        </ul>
+      </OnVisible>
+
+      <OnVisible className="experience" percent={20}>
+        <h2>
           Full-Stack Engineer
         </h2>
         <h3>
