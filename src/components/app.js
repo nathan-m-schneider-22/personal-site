@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../styles/app.scss';
 import {
-  BrowserRouter as Router, Route, NavLink, Switch,
+  HashRouter, Route, NavLink, Switch,
 } from 'react-router-dom';
 import Bio from './bio';
 import Projects from './projects';
@@ -37,7 +37,7 @@ const FallBack = () => {
 
 const App = (props) => {
   return (
-    <Router>
+    <HashRouter>
       <div>
         <Nav />
         <Switch>
@@ -51,7 +51,7 @@ const App = (props) => {
         </Switch>
         <Privacy />
       </div>
-    </Router>
+    </HashRouter>
   );
 };
 
