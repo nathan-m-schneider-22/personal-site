@@ -1,7 +1,7 @@
 # Nathan Schneider's Personal Site
 
 
-[deployed url](https://www.nschneider.me/)
+[deployed url](https://www.nschneider.dev/)
 Hosted by Netlify. 
 
 ## Notable Features
