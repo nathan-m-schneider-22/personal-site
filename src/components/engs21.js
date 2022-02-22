@@ -14,7 +14,7 @@ class ENGS21 extends React.Component {
       <div className="facts-container">
         <div>
           <h1>ENGS 021 Portfolio</h1>
-          <h3>Linked in the Canvas assignment, I'll do this when I have time</h3>
+          <h3>Linked in the Canvas assignment, I will finish this when I have time</h3>
         </div>
       </div>
     );
