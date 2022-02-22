@@ -1,0 +1,30 @@
+.engs{
+    display: flex;
+    flex-direction: column;
+    // border-style: dotted;
+
+}
+h1{
+    text-align: center;
+}
+.blurb{
+    margin: 40px;
+
+}
+
+.engs-text{
+    max-width: 60%;
+    // border-style: dotted;
+    padding: 10px;
+}
+
+.engs-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px;
+}
+.engs-pic{
+    height: 200px;
+    margin:10px;
+}
