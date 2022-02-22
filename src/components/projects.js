@@ -18,6 +18,9 @@ class Projects extends React.Component {
     return (
       <div className="projects-container">
         <h1>Projects</h1>
+        <Link to="/engs21/">
+              Introduction to Engineering
+            </Link>
 
         <div className="projects-list">
           <Carousel itemsToShow={1}>
