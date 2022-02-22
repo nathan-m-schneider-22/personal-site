@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/projects.scss';
 import Carousel from 'react-elastic-carousel';
+import { Link } from 'react-router-dom';
 import Squirrel from '../media/squirrel.png';
 import Moonboard from '../media/moonboard.jpg';
 import Vox from '../media/vox.png';
@@ -19,8 +20,8 @@ class Projects extends React.Component {
       <div className="projects-container">
         <h1>Projects</h1>
         <Link to="/engs21/">
-              Introduction to Engineering
-            </Link>
+          Introduction to Engineering
+        </Link>
 
         <div className="projects-list">
           <Carousel itemsToShow={1}>
