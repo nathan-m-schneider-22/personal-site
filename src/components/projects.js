@@ -1,11 +1,12 @@
 import React from 'react';
 import '../styles/projects.scss';
 import Carousel from 'react-elastic-carousel';
-import { Link } from 'react-router-dom';
 import Squirrel from '../media/squirrel.png';
 import Moonboard from '../media/moonboard.jpg';
 import Vox from '../media/vox.png';
 import SLAR from '../media/slar.jpg';
+import MANI from '../media/MANI.png';
+import RL from '../media/RL_robot.gif';
 
 class Projects extends React.Component {
   constructor(props) {
@@ -19,12 +20,49 @@ class Projects extends React.Component {
     return (
       <div className="projects-container">
         <h1>Projects</h1>
-        <Link to="/engs21/">
-          Introduction to Engineering
-        </Link>
-
         <div className="projects-list">
           <Carousel itemsToShow={1}>
+
+            <div className="project">
+              <div className="project-blurb">
+                <h1> MANI: Gesture Controlled Virtual Assistant </h1>
+                <h3>November 2022 - June 2022</h3>
+                <p>
+                  For a senior project, I led a team of peers to create a gesture-based virtual assistant.
+                  MANI utilized computer vision and machine learning to recognize finger spelled letters and autocomplete queries.
+                  Powered by Google assistant, MANI is able to display the weather, answer questions, control home automation, and more.
+                  The system was deployed on a Raspberry Pi, which was able to run powerful pose detection, hand tracking, and classifcation modesl with the help of Google Coral TPUs.
+                </p>
+              </div>
+              <img src={MANI} className="project-pic" alt="computer vision recognizing hand signs" />
+            </div>
+
+            <div className="project">
+              <div className="project-blurb">
+                <h1> Reinforcement Learning with a Robotic Manipulator</h1>
+                <h3>November 2021</h3>
+                <p>
+                  Reinforcement Learning allows AI agents to practice wide ranges of simulated tasks, then transfer to a real environment.
+                  For this project I trained an AI agent to perform a simple task, then transerred the agent to the real world, use a real robotic arm. Check out the
+                  <a href="https://puckreport.netlify.app/"> full writeup </a>
+                </p>
+              </div>
+              <img src={RL} className="project-pic" alt="a robot pushing a puck towards a target" />
+            </div>
+
+            <div className="project">
+              <div className="project-blurb">
+                <h1> MANI: Gesture Controlled Virtual Assistant </h1>
+                <h3>November 2022 - June 2022</h3>
+                <p>
+                  For a senior project, I led a team of peers to create a gesture-based virtual assistant.
+                  MANI utilized computer vision and machine learning to recognize finger spelled letters and autocomplete queries.
+                  Powered by Google assistant, MANI is able to display the weather, answer questions, control home automation, and more.
+                  The system was deployed on a Raspberry Pi, which was able to run powerful pose detection, hand tracking, and classifcation modesl with the help of Google Coral TPUs.
+                </p>
+              </div>
+              <img src={MANI} className="project-pic" alt="computer vision recognizing hand signs" />
+            </div>
 
             <div className="project">
               <div className="project-blurb">

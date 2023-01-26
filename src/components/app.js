@@ -25,8 +25,8 @@ const Privacy = () => {
   return (
     <div className="privacy">
       <p>
-        By visiting this site you agree to have your attendance logged and reported to me.
-        For more information see <a href="https://github.com/nathan-m-schneider-22/personal-site">the repository</a>
+        When you visit this site, I get notified with your IP. Thanks for checking it out!
+        For more information see <a href="https://github.com/nathan-m-schneider-22/personal-site#privacy-policy">privacy policy</a>
       </p>
     </div>
   );

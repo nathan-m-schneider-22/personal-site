@@ -5,6 +5,36 @@ const Experience = () => {
   return (
     <div className="experience-container">
       <h1>Work Experience</h1>
+
+      <OnVisible className="experience" percent={20}>
+        <h2>
+          Software Development Engineer I
+        </h2>
+        <h3>
+          August 2022 - Present
+        </h3>
+        <h3>
+          <i>
+            Amazon Web Services, Seattle WA
+          </i>
+          <br />
+          <i>
+            AWS IoT Device Ecosystem
+          </i>
+        </h3>
+        <ul>
+          <li>
+            Using AWS CDK, designed and deployed native AWS canary services to monitor the health of our product
+          </li>
+          <li>
+            Collaborated with a team to design high level solutions with well-written, highly organized documentation
+          </li>
+          <li>
+            Officially recognized by team for outstanding work in over 45% of sprint retrospectives
+          </li>
+        </ul>
+      </OnVisible>
+
       <OnVisible className="experience" percent={20}>
         <h2>
           Software Development Engineer Intern
@@ -125,16 +155,25 @@ const Experience = () => {
         </ul>
       </OnVisible>
 
-      <h1>Coursework</h1>
+      <h1>Education</h1>
+
       <OnVisible className="experience" percent={20}>
+        <h2>
+          Dartmouth College
+        </h2>
         <h3>
-          Software Development
+          Sept 2018 - June 2022
+        </h3>
+
+        <h3>
+          Major in Computer Science, Minor in Engineering
         </h3>
       </OnVisible>
 
+      <h2>Coursework</h2>
       <OnVisible className="experience" percent={20}>
         <h3>
-          Algorithms
+          Reinforcement Learning (independent study)
         </h3>
       </OnVisible>
 
@@ -147,6 +186,24 @@ const Experience = () => {
       <OnVisible className="experience" percent={20}>
         <h3>
           Artificial Intelligence
+        </h3>
+      </OnVisible>
+
+      <OnVisible className="experience" percent={20}>
+        <h3>
+          Robotics
+        </h3>
+      </OnVisible>
+
+      <OnVisible className="experience" percent={20}>
+        <h3>
+          Software Development
+        </h3>
+      </OnVisible>
+
+      <OnVisible className="experience" percent={20}>
+        <h3>
+          Algorithms
         </h3>
       </OnVisible>
 

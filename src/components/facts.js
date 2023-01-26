@@ -17,27 +17,25 @@ class Facts extends React.Component {
           <ul>
             <li>My name is Nathan McCord Schneider.</li>
             <li>I am from Lyons, Colorado, in the United States.</li>
+            <li>I live in Seattle, Washington.</li>
             <li>My birthday is December 18, 1999.</li>
-            <li>I am 21 years old.</li>
-            <li>I go to Dartmouth college.</li>
-            <li>I am majoring in computer science.</li>
+            <li>I am 23 years old.</li>
+            <li>I went to Dartmouth college.</li>
+            <li>I majored in computer science.</li>
             <li>My second favorite color is orange.</li>
             <li>My favorite color is blue.</li>
             <li>My favorite food is Mac and Cheese, and my favorite drink is orange juice.</li>
             <li>I love to read science fiction books.</li>
-            <li>I have an older sister named Emily. She is 24 and goes to Georgetown.</li>
+            <li>I have an older sister named Emily. She is 26 and studies law.</li>
             <li>I graduated Lyons High School in 2018, and went to Dartmouth college.</li>
-            <li>I&apos;m a junior at Dartmouth College, studying computer science. </li>
             <li>I have taken classes in programming, machine learning, AI, robotics, and engineering. </li>
-            <li>I am currently taking classes in AI and networks.</li>
             <li>Now I love to rock climb, and code.
               I do both indoor bouldering and outdoor lead climbing. My favorite type of climbing is sandstone overhang. I&apos;ve climbed in New Hampshire, Colorado, and Nevada.
             </li>
             <li>I&apos;m interesting in learning about machine learning and AI.</li>
             <li>I think the openai GPT-3 model is super interesting.</li>
-            <li>I currently live near Hanover, NH, with my friends and my girlfriend, Olivia.</li>
             <li>At the DALI Lab I worked as a full-stack developer.</li>
-            <li>I currently work as a research assistant for Professor David Kotz at Dartmouth.</li>
+            <li>I currently work at Amazon Web Services (AWS).</li>
             <li>I&apos;m a independent worker who learns fast. I have strong communication skills, and interdisciplinary team experience.</li>
             <li>My biggest weakness is that I can get tunnel vision on a single task. </li>
             <li>I can code in Python, Javscript, Bash, C, Java, and more.
@@ -63,7 +61,6 @@ class Facts extends React.Component {
             <li>Another personal project was difficulty classification of climbing routes.
               I retrieved and cleaned community climbing route data from Moonboard, then trained and tested deep neural networks to predict climbing route difficulty.
             </li>
-            <li>This summer, I will work as a software engineering intern at Amazon, in Seattle. </li>
             <li>You can email me at schnei.nathan@gmail.com.</li>
             <li>You can ask me about my work, my hobbies, or general questions about my life.</li>
           </ul>
