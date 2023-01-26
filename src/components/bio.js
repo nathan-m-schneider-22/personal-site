@@ -2,7 +2,7 @@
 import React from 'react';
 import '../styles/bio.scss';
 import Typist from 'react-typist';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import ProfilePic from '../media/profile_pic.png';
 import Experience from './experience';
 // eslint-disable-next-line no-unused-vars
@@ -81,9 +81,9 @@ class Bio extends React.Component {
         <hr />
         <div className="question-button-section">
           <div>
-            <Link to="/questions/">
+            {/* <Link to="/questions/">
               <button type="button" className="question-button">Ask me a question</button>
-            </Link>
+            </Link> */}
 
           </div>
           {/* <h2>Q/A powered by <a label="GPT-3" href="https://openai.com/blog/gpt-3-apps/">Openai&apos;s GPT-3 </a> </h2> */}
