@@ -86,7 +86,7 @@ class Bio extends React.Component {
             </Link>
 
           </div>
-          <h2>Q/A powered by <a label="GPT-3" href="https://openai.com/blog/gpt-3-apps/">Openai&apos;s GPT-3 </a> </h2>
+          {/* <h2>Q/A powered by <a label="GPT-3" href="https://openai.com/blog/gpt-3-apps/">Openai&apos;s GPT-3 </a> </h2> */}
         </div>
         <Experience />
       </div>

@@ -15,7 +15,7 @@ const Nav = () => {
     <div className="navbar">
       <li><NavLink exact to="/">About</NavLink></li>
       <li><NavLink to="/projects">Projects</NavLink></li>
-      <li><NavLink to="/questions">Q/A</NavLink></li>
+      {/* <li><NavLink to="/questions">Q/A</NavLink></li> */}
 
     </div>
   );
