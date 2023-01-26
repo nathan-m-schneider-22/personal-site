@@ -52,20 +52,6 @@ class Projects extends React.Component {
 
             <div className="project">
               <div className="project-blurb">
-                <h1> MANI: Gesture Controlled Virtual Assistant </h1>
-                <h3>November 2022 - June 2022</h3>
-                <p>
-                  For a senior project, I led a team of peers to create a gesture-based virtual assistant.
-                  MANI utilized computer vision and machine learning to recognize finger spelled letters and autocomplete queries.
-                  Powered by Google assistant, MANI is able to display the weather, answer questions, control home automation, and more.
-                  The system was deployed on a Raspberry Pi, which was able to run powerful pose detection, hand tracking, and classifcation modesl with the help of Google Coral TPUs.
-                </p>
-              </div>
-              <img src={MANI} className="project-pic" alt="computer vision recognizing hand signs" />
-            </div>
-
-            <div className="project">
-              <div className="project-blurb">
                 <h1> Squirrel-Cam Bird Feeder Defense System</h1>
                 <h3>June 2020 - Present</h3>
                 <p>
