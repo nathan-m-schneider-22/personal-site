@@ -31,7 +31,7 @@ class Projects extends React.Component {
   sendQuery = (query) => {
     if (!this.state.loading) {
       this.setState({ loading: true, query: '' });
-      const url = 'https://Personalsitebackend-env.eba-dy7mxcrn.us-east-2.elasticbeanstalk.com/question';
+      const url = 'http://Personalsitebackend-env.eba-dy7mxcrn.us-east-2.elasticbeanstalk.com/question';
       const header = { 'Content-Type': 'application/json' };
       const data = { query };
       axios.post(url, data, header).then((res) => {
