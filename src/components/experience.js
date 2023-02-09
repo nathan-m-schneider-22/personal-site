@@ -40,7 +40,7 @@ const Experience = () => {
           Software Development Engineer Intern
         </h2>
         <h3>
-          June 2021 - September 2020
+          June 2021 - September 20211
         </h3>
         <h3>
           <i>
