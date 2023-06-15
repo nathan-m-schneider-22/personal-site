@@ -9,6 +9,7 @@ import Projects from './projects';
 import Questions from './questions';
 import Facts from './facts';
 import ENGS21 from './engs21';
+import Valorant from './valorant';
 
 const Nav = () => {
   return (
@@ -45,6 +46,7 @@ const App = (props) => {
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/questions" component={Questions} />
           <Route exact path="/facts" component={Facts} />
+          <Route exact path="/valorant" component={Valorant} />
           <Route exact path="/engs21" component={ENGS21} />
 
           <Route component={FallBack} />
