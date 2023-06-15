@@ -32,10 +32,10 @@ class Projects extends React.Component {
                 <h1> Comfort Pick: A statistical study of Valorant matches </h1>
                 <h3>June 2023</h3>
                 <p>
-                  As I was playing Valorant with a friend of mine, we started debating the importance of team
-                  composition. He was adamant that it was important, important enough to prioritize over more comfortable options.
-                  I, however, thought the concept was overrated, believed it`&apos;`s best to pick what you`&apos;`re most comfortable with.
-                  I could have left it at that, however I instead collected over 200GB of match data (over 75k matches) to prove my point. Check out the <NavLink to="/valorant"> writeup</NavLink>
+                  As I was playing Valorant with a friend of mine, we were discussing the importance of team
+                  composition. His opinion was that it&apos;s important, important enough to prioritize over more comfortable options.
+                  I wasn&apos;t sure, and figured that people might win more if they were more comfortable.
+                  I could have left it at that, but instead I collected over 200GB of match data (over 75k matches) to prove my point. Check out <NavLink to="/valorant">the writeup</NavLink>
                 </p>
               </div>
               <img src={comp} className="project-pic" alt="a graph showing I was right the whole time" />
