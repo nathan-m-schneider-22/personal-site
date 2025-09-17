@@ -1,68 +1,58 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const autoprefixer = require('autoprefixer');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 const env = process.env.NODE_ENV || 'development';
-// set to 'production' or 'development' in your env
+const isProd = env === 'production';
 
-const finalCSSLoader = (env === 'production') ? MiniCssExtractPlugin.loader : { loader: 'style-loader' };
+const finalCSSLoader = isProd ? MiniCssExtractPlugin.loader : { loader: 'style-loader' };
 
 module.exports = {
+  mode: env,
+  entry: ['./src'],
+  output: {
+    publicPath: '/',
+    filename: isProd ? 'assets/js/[name].[contenthash].js' : 'assets/js/[name].js',
+    assetModuleFilename: 'assets/media/[name][ext]',
+  },
+  devtool: 'source-map',
   devServer: {
     hot: true,
     historyApiFallback: true,
   },
-  mode: env,
-  output: { publicPath: '/' },
-  entry: ['./src'], // this is where our app lives
-  devtool: 'source-map', // this enables debugging with source in chrome devtools
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
-        use: [
-          { loader: 'babel-loader' },
-          { loader: 'eslint-loader' },
-        ],
+        use: [{ loader: 'babel-loader' }],
       },
       {
-        test: /\.s?css/,
+        test: /\.s?css$/,
         use: [
           finalCSSLoader,
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true,
-            },
-          },
-          {
-            loader: 'postcss-loader',
-          },
+          { loader: 'css-loader', options: { sourceMap: true } },
+          { loader: 'postcss-loader', options: { sourceMap: true } },
           {
             loader: 'sass-loader',
             options: {
               sourceMap: true,
+              implementation: require('sass-embedded'), // avoids legacy JS API
             },
-          },
-        ],
+          }],
       },
       {
-        test: /\.(jpe?g|png|gif|svg|pdf|ico)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              useRelativePath: true,
-              name: '[name].[ext]',
-            },
-          },
-        ],
+        test: /\.(jpe?g|png|gif|svg|pdf|ico)$/i,
+        type: 'asset/resource',
       },
     ],
   },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
   plugins: [
-    new MiniCssExtractPlugin(),
+    new ESLintPlugin({ extensions: ['js', 'jsx'] }),
+    ...(isProd ? [new MiniCssExtractPlugin({ filename: 'assets/css/[name].[contenthash].css' })] : []),
     new HtmlWebpackPlugin({
       template: './src/index.html',
       favicon: './src/media/favicon.ico',
@@ -72,6 +62,5 @@ module.exports = {
       template: './src/index.html',
       filename: './200.html',
     }),
-
   ],
 };

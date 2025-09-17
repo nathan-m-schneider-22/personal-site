@@ -14,7 +14,12 @@ const Experience = () => {
           <i>AWS Bedrock Guardrails</i>
         </h3>
         <ul>
-          <li>Launched LLM-backed guardrail tiers processing 150M+ tokens/min across 60+ languages</li>
+          <li>Launched LLM-backed&nbsp;
+            <a href="https://aws.amazon.com/blogs/machine-learning/tailor-responsible-ai-with-new-safeguard-tiers-in-amazon-bedrock-guardrails/">
+              guardrail tiers
+            </a>
+            &nbsp;processing 150M+ tokens/min across 60+ languages
+          </li>
           <li>Optimized prompt-based systems for latency, cost, and availability with prompt caching and cross-region inference</li>
           <li>Configured Guardrail Image Filter model for inference; improved throughput 50% with multi-tenant GPU hosts</li>
           <li>Developed internal system for in-domain confidence of Guardrails content moderation</li>
@@ -30,9 +35,22 @@ const Experience = () => {
           <i>AWS Bedrock Guardrails</i>
         </h3>
         <ul>
-          <li>Launched customer-configurable PII detection guardrails processing 250M tokens/min</li>
-          <li>Increased model performance 84% with FlashAttention and classification heads, boosting throughput</li>
-          <li>Reduced hosting costs 64% across a 4,000-GPU fleet, lowering customer costs</li>
+          <li>Launched customer-configurable&nbsp;
+            <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-sensitive-filters.html/">
+              PII detection
+            </a>
+            &nbsp;guardrails processing 250M tokens/min
+          </li>
+          <li>Increased model performance 84% with FlashAttention and classification heads&nbsp;
+            <a href="https://aws.amazon.com/about-aws/whats-new/2025/02/amazon-bedrock-guardrails-increase-service-quota-limits/">
+              increasing throughput
+            </a>
+          </li>
+          <li>Reduced hosting costs 64% across a 4,000-GPU fleet,&nbsp;
+            <a href="https://aws.amazon.com/about-aws/whats-new/2024/12/amazon-bedrock-guardrails-reduces-pricing-85-percent/">
+              lowering customer costs
+            </a>
+          </li>
           <li>Used AWS CDK IaC to deploy across 25 regions with 99.99% availability</li>
           <li>Engineering liaison with PhD ML scientists to optimize SLMs for inference</li>
         </ul>
