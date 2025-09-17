@@ -6,7 +6,7 @@ import Typist from 'react-typist';
 import ProfilePic from '../media/profile_pic.png';
 import Experience from './experience';
 // eslint-disable-next-line no-unused-vars
-import pdf from '../media/Full_Resume.pdf';
+import pdfResume from '../media/Full_Resume.pdf';
 
 class Bio extends React.Component {
   constructor(props) {
@@ -58,7 +58,7 @@ class Bio extends React.Component {
                 <a href="http://linkedin.com/in/nathan-schneider22/" target="_blank" rel="noreferrer">
                   <i className="fa fa-linkedin-square" />
                 </a>
-                <a target="_blank" href="/Full_Resume.pdf">
+                <a href={pdfResume} target="_blank" rel="noopener noreferrer">
                   <i className="fa fa-file" />
                 </a>
               </div>
