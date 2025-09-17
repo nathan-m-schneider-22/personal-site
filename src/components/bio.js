@@ -66,14 +66,14 @@ class Bio extends React.Component {
             </div>
           </div>
           <div className="blurb-container">
-            <Typist avgTypingDelay={20} startDelay={2000} stdTypingDelay={5} cursor={{ show: false }}>
+            <Typist avgTypingDelay={20} startDelay={2000} stdTypingDelay={4} cursor={{ show: false }}>
               <p>
-                Hi, I&apos;m Nathan, a software engineer with AWS.
+                Hi, I&apos;m Nathan, a software engineer with AWS Bedrock, AWS&apos;s GenAI division.
               </p>
 
               <Typist.Delay ms={1000} />
               <p>
-                I&apos;m currently working with AWS cloud infrastructure, but I&apos;m also excited about Machine Learning and AI.
+                I work on Bedrock Guardrails: configurable, machine learning based moderation filters for LLMs.
               </p>
             </Typist>
 

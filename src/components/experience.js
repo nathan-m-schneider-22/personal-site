@@ -5,61 +5,69 @@ const Experience = () => {
   return (
     <div className="experience-container">
       <h1>Work Experience</h1>
-
       <OnVisible className="experience" percent={20}>
-        <h2>
-          Software Development Engineer I
-        </h2>
+        <h2>Software Development Engineer II</h2>
+        <h3>April 2025 - Present</h3>
         <h3>
-          August 2022 - Present
-        </h3>
-        <h3>
-          <i>
-            Amazon Web Services, Seattle WA
-          </i>
+          <i>Amazon Web Services, Seattle, WA</i>
           <br />
-          <i>
-            AWS IoT Device Ecosystem
-          </i>
+          <i>AWS Bedrock Guardrails</i>
         </h3>
         <ul>
-          <li>
-            Using AWS CDK, designed and deployed native AWS canary services to monitor the health of our product
-          </li>
-          <li>
-            Collaborated with a team to design high level solutions with well-written, highly organized documentation
-          </li>
-          <li>
-            Officially recognized by team for outstanding work in over 45% of sprint retrospectives
-          </li>
+          <li>Launched LLM-backed guardrail tiers processing 150M+ tokens/min across 60+ languages</li>
+          <li>Optimized prompt-based systems for latency, cost, and availability with prompt caching and cross-region inference</li>
+          <li>Configured Guardrail Image Filter model for inference; improved throughput 50% with multi-tenant GPU hosts</li>
+          <li>Developed internal system for in-domain confidence of Guardrails content moderation</li>
         </ul>
       </OnVisible>
 
       <OnVisible className="experience" percent={20}>
-        <h2>
-          Software Development Engineer Intern
-        </h2>
+        <h2>Software Development Engineer</h2>
+        <h3>September 2023 - April 2025</h3>
         <h3>
-          June 2021 - September 20211
-        </h3>
-        <h3>
-          <i>
-            Amazon Web Services, Seattle, WA
-          </i>
+          <i>Amazon Web Services, Seattle, WA</i>
+          <br />
+          <i>AWS Bedrock Guardrails</i>
         </h3>
         <ul>
-          <li>
-            Designed and implemented a cloud infrastructure tool for collaboration and automation in software testing
-          </li>
-          <li>
-            Through investigation and research, diagnosed and defined team productivity losses
-          </li>
-          <li>
-            Using AWS CDK Infrastructure as Code, provisioned and tuned cloud services for reliability and security
-          </li>
-          <li>
-            Wrote high quality Python, Go, and Typescript code, chosen for varying needs of the project
-          </li>
+          <li>Launched customer-configurable PII detection guardrails processing 250M tokens/min</li>
+          <li>Increased model performance 84% with FlashAttention and classification heads, boosting throughput</li>
+          <li>Reduced hosting costs 64% across a 4,000-GPU fleet, lowering customer costs</li>
+          <li>Used AWS CDK IaC to deploy across 25 regions with 99.99% availability</li>
+          <li>Engineering liaison with PhD ML scientists to optimize SLMs for inference</li>
+        </ul>
+      </OnVisible>
+
+      <OnVisible className="experience" percent={20}>
+        <h2>Software Development Engineer</h2>
+        <h3>August 2022 - September 2023</h3>
+        <h3>
+          <i>Amazon Web Services, Seattle, WA</i>
+          <br />
+          <i>AWS IoT Greengrass</i>
+        </h3>
+        <ul>
+          <li>Implemented native AWS canary services with AWS CDK IaC to monitor product health</li>
+          <li>Deployed services to EC2 with CI/CD pipelines, test automation, and CloudWatch monitoring</li>
+          <li>Collaborated on high-level solutions with well-organized documentation</li>
+          <li>Recognized for outstanding work in 45%+ of sprint retrospectives</li>
+          <li>Developed open-source components to ensure high availability at the edge</li>
+        </ul>
+      </OnVisible>
+
+      <OnVisible className="experience" percent={20}>
+        <h2>Software Development Engineer Intern</h2>
+        <h3>May 2021 - September 2021</h3>
+        <h3>
+          <i>Amazon Web Services, Seattle, WA</i>
+          <br />
+          <i>AWS IoT Device Ecosystem</i>
+        </h3>
+        <ul>
+          <li>Built a cloud-based hardware mutex for collaboration and automation in software testing</li>
+          <li>Investigated and defined team productivity losses through research and analysis</li>
+          <li>Provisioned and tuned cloud services with AWS CDK IaC for reliability and security</li>
+          <li>Wrote production-quality Python, Go, and TypeScript for varied project needs</li>
         </ul>
       </OnVisible>
 
