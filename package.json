@@ -13,6 +13,9 @@
   "repository": "https://github.com/dartmouth-cs52-20X/starterpack-nathan-m-schneider-22.git",
   "author": "nathan-m-schneider-22 <nathan.m.schneider.22@dartmouth.edu>",
   "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
   "devDependencies": {
     "@babel/core": "^7.25.8",
     "@babel/eslint-parser": "^7.25.1",
@@ -47,7 +50,6 @@
     "jquery": "^3.7.1",
     "latex.css": "^1.9.2",
     "lodash.debounce": "^4.0.8",
-    "postcss-loader": "^8.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-elastic-carousel": "^0.11.5",
