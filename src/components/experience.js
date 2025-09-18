@@ -36,7 +36,7 @@ const Experience = () => {
         </h3>
         <ul>
           <li>Launched customer-configurable&nbsp;
-            <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-sensitive-filters.html/">
+            <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/guardrails-sensitive-filters.html">
               PII detection
             </a>
             &nbsp;guardrails processing 250M tokens/min
